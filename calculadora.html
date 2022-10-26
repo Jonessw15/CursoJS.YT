@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - JS</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <div>Digite os valores:</div>
+    <input type="" name="valor1" id="valor1"></input>
+    <input name="valor2" id="valor2"></input>
+    <input type="button" value="Somar" onclick="somar()" id="somar"></input>
+    <input type="button" value="Subtrair" onclick="menos()" id="menos"></input>
+    <div id="res">Resultado</div>
+
+    <script>
+        
+
+      
+            function somar() {
+                var valor1 = window.document.querySelector('#valor1')
+                var valor2 = window.document.querySelector('#valor2')
+                var res = window.document.querySelector('#res')
+                var v1 = Number(valor1.value)
+                var v2 = Number(valor2.value)
+                var s = v1 + v2
+                res.innerHTML = `A soma entre ${v1} e ${v2} é ${s}`
+            }
+     
+            function menos() {
+                var valor1 = window.document.querySelector('#valor1')
+                var valor2 = window.document.querySelector('#valor2')
+                var res = window.document.querySelector('#res')
+                var v1 = Number(valor1.value)
+                var v2 = Number(valor2.value)
+                var m = v1 - v2
+
+                res.innerHTML = `A subtração entre ${v1} e ${v2} é ${m}`
+            }
+        
+    </script>
+</body>
+</html>

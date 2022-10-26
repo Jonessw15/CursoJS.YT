@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <h1>Sistema de massa</h1>
+    <label>Digite seu país atual</label>
+    <input type="text" name="btnp" id="btnp"></input>
+    <input type="button" value="Verificar" onclick="teste()"></input>
+    <div id="res">
+
+    </div>
+    <script>
+        function teste() {
+            var nac = document.querySelector('#btnp')
+            var res = document.querySelector('#res')
+
+            res.innerHTML = `Seu pais é ${nac.value}`
+        }   
+    </script>
+</body>
+</html>

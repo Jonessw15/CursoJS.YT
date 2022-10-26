@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificar idades</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                <label><strong>Ano de Nascimento: </strong></label>
+                <input type="number" name="txtAno" id="txtAno" min="0">
+            </p>
+            <p>
+                <label><strong>Sexo:</strong></label>
+                <input type="radio" name="radsex" id="masc" checked> <!-- radio == 0 -->
+                <label>Masculino</label>
+                <input type="radio" name="radsex" id="fem"> <!-- radio == 1 -->
+                <label>Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="verificar" onclick="verificar()" id="ver">
+            </p>
+        </div>
+        <div id="res">
+            <label><strong>Prencha seus dados para ver o resultado</strong></label>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
